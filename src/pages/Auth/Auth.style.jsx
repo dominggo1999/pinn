@@ -3,7 +3,7 @@ import tw, { styled } from 'twin.macro';
 export const LoginWrapper = styled.div`
   ${tw`
     w-full 
-    h-screen
+    min-h-screen
     bg-primary
     dark:bg-primary-dark
     dark:text-white
@@ -12,6 +12,7 @@ export const LoginWrapper = styled.div`
     transition-bg
     ease-out-sine
     duration-400 
+    items-stretch
   `}
 `;
 
@@ -19,17 +20,22 @@ export const VideoWrapper = styled.div`
   ${tw`
     relative
     w-5/12
-    h-screen
+    min-h-full
+    max-h-full
     hidden 
     lg:flex
-    
+    overflow-hidden
   `}
 
   video{
     ${tw`
+      absolute
+      min-h-screen
       w-full
       object-cover
-      object-center 
+      object-center
+      -translate-y-1/2
+      top-1/2
     `}
   }
 `;
@@ -56,8 +62,9 @@ export const FormSection = styled.div`
     px-5
     md:px-10
     gap-y-3
-    justify-center
     relative
+    pt-14
+    pb-10
   `}
 `;
 
