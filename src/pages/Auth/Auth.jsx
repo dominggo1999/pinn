@@ -1,6 +1,5 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import tw from 'twin.macro';
 import {
   LoginWrapper,
   VideoWrapper,

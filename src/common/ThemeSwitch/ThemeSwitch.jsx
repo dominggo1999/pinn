@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
-import Switch from 'react-switch';
+import S from 'react-switch';
 import { MdDarkMode, MdOutlineLightMode } from 'react-icons/md';
 import { SwitchWrapper, HandleIcon } from './ThemeSwitch.style';
 import useThemeStore from '../../store/useThemeStore';
+
+const Switch = S.default ? S.default : S;
 
 const changeTheme = useThemeStore.getState().changeTheme;
 
