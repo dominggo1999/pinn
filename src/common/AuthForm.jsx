@@ -11,8 +11,10 @@ export const FormWrapper = styled.div`
   input{
     ${tw`
       bg-transparent 
-      focus:border-accent 
-      border 
+      border
+      border-black
+      dark:border-white
+      focus:border-accent
       p-3
       rounded-lg 
       text-xl
@@ -61,6 +63,7 @@ export const FormButton = styled.button`
     text-lg
     font-semibold
     mt-3
+    text-white
     hover:bg-accent-lighter
   `}
 `;

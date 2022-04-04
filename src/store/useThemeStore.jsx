@@ -11,16 +11,18 @@ if(!savedTheme) {
 
 export const initialTheme = savedTheme;
 
-const changeTheme = (set, newTheme) => {
+const changeTheme = (set) => {
   return set(produce((draft) => {
-    draft.theme.name = newTheme;
+    const newTheme = draft.theme === 'dark' ? 'light' : 'dark';
+    draft.theme = draft.theme === 'dark' ? 'light' : 'dark';
+    localStorage.setItem('theme', newTheme);
   }));
 };
 
 const useThemeStore = create((set, get) => {
   return {
     theme: initialTheme,
-    changeTheme: (newTheme) => changeTheme(set, newTheme),
+    changeTheme: () => changeTheme(set),
   };
 });
 

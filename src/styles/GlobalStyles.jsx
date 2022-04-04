@@ -7,6 +7,7 @@ const CustomStyles = createGlobalStyle`
     ${tw`
       antialiased
       bg-primary
+      dark:bg-primary-dark
     `}
   }
 `;

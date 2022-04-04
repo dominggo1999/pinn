@@ -7,18 +7,20 @@ import {
   Overlay,
   Title,
   Description,
+  ThemeSwitchWrapper,
 } from './Auth.style';
 
 import SignInForm from '../../common/SignInForm/SignInForm';
 import SignUpForm from '../../common/SignUpForm/SignUpForm';
 import ResetPassword from '../../common/ResetPasswordForm/ResetPassword';
+import ThemeSwitch from '../../common/ThemeSwitch/ThemeSwitch';
 
 const Auth = () => {
   return (
     <LoginWrapper>
       <VideoWrapper>
         <video
-          src="./login-video.mp4"
+          src="/login-video.mp4"
           type="video/mp4"
           loop
           controls={false}
@@ -28,6 +30,9 @@ const Auth = () => {
         <Overlay />
       </VideoWrapper>
       <FormSection>
+        <ThemeSwitchWrapper>
+          <ThemeSwitch />
+        </ThemeSwitchWrapper>
         <Title>PINN</Title>
         <Description>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi maxime velit sed sunt.</Description>
 

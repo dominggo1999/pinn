@@ -6,8 +6,12 @@ export const LoginWrapper = styled.div`
     h-screen
     bg-primary
     dark:bg-primary-dark
-    text-white
+    dark:text-white
     flex
+    transition 
+    transition-bg
+    ease-out-sine
+    duration-400 
   `}
 `;
 
@@ -49,9 +53,22 @@ export const FormSection = styled.div`
     h-full 
     flex
     flex-col
-    px-10
+    px-5
+    md:px-10
     gap-y-3
     justify-center
+    relative
+  `}
+`;
+
+export const ThemeSwitchWrapper = styled.div`
+  ${tw`
+    absolute
+    bottom-0
+    right-0
+    px-5
+    md:px-10
+    py-3
   `}
 `;
 

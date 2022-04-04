@@ -12,7 +12,9 @@
     "immer": "^9.0.12",
     "react": "^17.0.0",
     "react-dom": "^17.0.0",
+    "react-icons": "^4.3.1",
     "react-router-dom": "^6.0.2",
+    "react-switch": "^6.0.0",
     "styled-components": "^5.3.1",
     "yup": "^0.32.11",
     "zustand": "^3.7.1"

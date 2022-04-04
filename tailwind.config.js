@@ -1,6 +1,6 @@
 module.exports = {
   mode: 'jit',
-  darkMode: 'media',
+  darkMode: 'class',
   theme: {
     extend: {
       colors: {
@@ -8,6 +8,15 @@ module.exports = {
         primary: '#ffffff',
         accent: '#E53265',
         'accent-lighter': '#F04D7A',
+      },
+      transitionProperty: {
+        bg: 'background-color',
+      },
+      transitionTimingFunction: {
+        'out-sine': 'cubic-bezier(0.61, 1, 0.88, 1)',
+      },
+      transitionDuration: {
+        400: '400ms',
       },
     },
   },
