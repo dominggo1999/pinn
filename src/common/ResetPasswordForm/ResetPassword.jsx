@@ -51,9 +51,8 @@ const ResetPassword = () => {
                 name="email"
               />
             </ErrorWrapper>
-            <FormButton type="submit">Send Link</FormButton>
           </FieldWrapper>
-
+          <FormButton type="submit">Send Link</FormButton>
         </FormWrapper>
 
         <FormMessage>
